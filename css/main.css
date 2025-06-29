@@ -331,15 +331,115 @@ a:hover {
 @media (max-width: 767px) {
   .hero__heading {
     font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .hero__content-width {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  .hero__content p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .hero__scroll-btn {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    margin-bottom: 10px;
   }
   .steps,
   .steps--background {
     border-radius: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 24px;
+  }
+  .steps__section-thumbnail {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 18px;
+    border-radius: 14px;
+  }
+  .steps__content-width {
+    max-width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  .steps h1,
+  .steps h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  .steps span {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+  .steps a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.05rem;
+    padding: 8px 18px;
+    border-radius: 16px;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    box-shadow: 0 2px 8px 0 rgba(122,79,39,0.08);
+  }
+  .steps a:hover {
+    background: var(--primary-color-highlight);
+    color: #fff;
   }
   .bg-dark.text-white {
     border-radius: 0;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+  }
+  .bg-dark.text-white h3 {
+    font-size: 1.2rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .bg-dark.text-white p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .bg-dark.text-white img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 12px;
   }
   .footer {
     border-radius: 0;
+    font-size: 0.95rem;
+    padding: 1.2rem 0;
+    text-align: center;
+  }
+  .footer .border-highlight {
+    border-top: 1px solid var(--accent-color);
+    margin-top: 10px;
+  }
+  .footer .nav {
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+  .footer .bi {
+    font-size: 1.3rem;
+  }
+}
+
+/* Opcional: mejora la visualización de botones en móvil */
+@media (max-width: 480px) {
+  .btn-outline-light,
+  .steps a {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 12px 0;
+    margin-bottom: 10px;
   }
 }
